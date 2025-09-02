@@ -29,5 +29,32 @@ let count = 1;
         }
 }
 
+Breaking the records
+
+function breakingRecords(scores) {
+    // Write your code here
+    
+    let countmax = scores[0];
+    let countmin = scores[0];
+    let recordmax = 0;
+    let recordmin = 0;
+    
+    for(let i = 0; i < scores.length; i++){
+      if(countmax < scores[i]){
+        recordmax = recordmax + 1;
+        countmax = scores[i];
+      }  
+      if (countmin > scores[i]){
+        recordmin = recordmin + 1;
+        countmin = scores[i];
+      }
+    }
+    return [recordmax, recordmin];
+
+}
+
+
+
+
 
 
