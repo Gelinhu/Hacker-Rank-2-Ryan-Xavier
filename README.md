@@ -53,6 +53,37 @@ function breakingRecords(scores) {
 
 }
 
+Compare The Triples
+
+function compareTriplets(a, b) {
+    let alice = 0;
+    let bob = 0;
+    
+    for(let i = 0; i < a.length; i++){
+        if(a[i] > b[i]){
+            alice = alice + 1; 
+        }
+        if(b[i] > a[i]){
+            bob = bob + 1;
+        }
+    }
+    return [alice, bob]
+
+}
+
+A Very Big Sum
+
+function aVeryBigSum(ar) {
+    // Write your code here
+    let soma = 0;
+    
+    for(let i = 0; i < ar.length; i++){
+        soma = soma + ar[i];
+    }
+    return soma
+
+}
+
 
 
 
